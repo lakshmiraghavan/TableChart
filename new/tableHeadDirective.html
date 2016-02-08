@@ -1,0 +1,27 @@
+<ul>
+    <li ng-scope-element="list" ng-repeat="event in events" ng-click="clicked(event.name)">
+    <span >
+        <img  ng-src="{{event.path}}" />
+        <br>
+        {{event.name}}
+    </span>
+   </li>
+</ul>
+
+<div >
+    <table  style=" width:95%; align:center; margin-left:2%;border:2px solid white" >
+
+        <tr ng-repeat="(key, val) in events2 | filter:eventName">
+            <th class="category" ng-repeat="val1 in val.category" >{{$index+1}}. {{val1.category}}
+                <div class="services">{{$index+1}}. &nbsp {{val1.name}}
+
+                        <div class="capabilities" ng-repeat="value2 in val1.capabilities ">{{$index+1}}. &nbsp{{value2.name}}</div>
+
+                </div>
+            </th>
+        </tr>
+    </table>
+</div>
+
+
+

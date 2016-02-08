@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="app.js"></script>
+    <style>
+        body{
+            font-family: "sans-serif","Helvetic Neue";
+            font-size: 12px;
+            margin:0;
+        }
+        ul{
+            display: inline-block;
+            background-color: #00778B;
+            height: 2rem;
+            margin-left: 2rem;
+        }
+        ul.heading{
+            position: relative;
+            margin-top: 50px;
+            margin-left: 20px;
+            height: 20px;
+            width: 1220px;
+            background-color: #00778B;
+            border: 1px solid #00778B;
+            z-index: -1;
+
+        }
+        li{
+            position:relative;
+            list-style-type: none;
+            font-family: "sans-serif","Helvetic Neue";
+            display: inline-block;
+            width: 150px;
+            height: 100px;
+            top:-26px;
+            text-align: center;
+            padding-top:10px;
+
+        }
+        h2{
+            margin-left: 20px;
+        }
+        .services{
+            border:2px solid white;
+            font-weight: normal;
+            font-size:12px;
+            padding-top:10px;
+            padding-left:1em;
+            text-align:left;
+            margin-top:2rem;
+            background-color: #8D8F8E;
+            height:40px;
+            position:relative;
+            z-index:2
+        }
+        .capabilities{
+            font-size:12px;
+            font-weight:normal;
+            color:black;
+            padding-top:10px;
+            margin-left:-12px;
+            padding-left:1em;
+            text-align:left;
+            top:25px;
+            height:40px;
+            margin-top:0.2rem;
+            background-color: #FFBA20;
+            position:relative;
+            z-index:3
+
+        }
+        .category {
+            border:2px solid white;
+            font-family: Helvetica, Arial,sans-serif;
+            font-size:14px;
+            font-weight: bold;
+            color:white;
+            padding-top:10px;
+            position:relative;
+            background-color: #00778B;
+            height:20px
+        }
+
+        .enlarge {
+            transform:scale(1.2);
+        }
+    </style>
+</head>
+<body ng-controller="myCtrl">
+<h2>Table Chart</h2>
+<div table-head events="services" events2="myArr"></div>
+<br>
+</body>
+</html>
